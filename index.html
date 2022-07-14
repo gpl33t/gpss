@@ -1,7 +1,7 @@
 <button type="button" > click </button>
 <script src="https://cdn.jsdelivr.net/npm/ngmqtt@1.0.2/browserMqtt.js"></script>
 <script>
-const client = mqtt.connect("wss://broker.emqx.io:8084")
+const client = mqtt.connect("mqtt://broker.hivemq.com:1883")
 
 client.publish('presencedd', 'hello!')
 client.end()
